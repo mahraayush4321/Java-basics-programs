@@ -33,6 +33,14 @@ public class start {
         names.add("dani");
         names.add("random");
 
+        // Remove from arraylist
+
+        names.remove("Mahra");
+
+        // How to get size of arraylist
+
+        System.out.println("size :-> " + names.size());
+
         System.out.println(names);
 
         System.out.println(names.get(0));
@@ -49,7 +57,6 @@ public class start {
         list.add("Mahra");
         // list.add(234);
         // list.add(56.56);
-
         System.out.println(list);
 
     }
