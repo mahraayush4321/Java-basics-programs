@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Vector;
 
 public class start {
     public static void main(String[] args) {
@@ -41,6 +42,12 @@ public class start {
 
         System.out.println("size :-> " + names.size());
 
+        // How to set values in arraylist
+
+        // names.set(0,"manish")
+
+        names.add(0, "Tanishq");
+
         System.out.println(names);
 
         System.out.println(names.get(0));
@@ -59,5 +66,8 @@ public class start {
         // list.add(56.56);
         System.out.println(list);
 
+        Vector<String> v = new Vector<>();
+        v.addAll(names);
+        System.out.println("Vector :-> " + v);
     }
 }
