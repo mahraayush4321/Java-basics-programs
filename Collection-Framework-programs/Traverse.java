@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Traverse {
@@ -19,5 +20,17 @@ public class Traverse {
 
             System.out.println(str + "\t" + str.length() + "\t");
         }
+
+        System.out.println("-------------------------------------");
+
+        // forward traversing using iterator
+
+        Iterator<String> itr = names.iterator();
+
+        while (itr.hasNext()) {
+            String next = itr.next();
+            System.out.println(next);
+        }
+
     }
 }
