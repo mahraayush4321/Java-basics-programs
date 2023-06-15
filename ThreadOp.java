@@ -1,7 +1,6 @@
 class UserThread extends Thread {
     public void run() {
         // task for thread
-
         System.out.println("user defined thread ");
     }
 }
