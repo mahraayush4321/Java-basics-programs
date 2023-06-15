@@ -1,3 +1,11 @@
+class UserThread extends Thread {
+    public void run() {
+        // task for thread
+
+        System.out.println("user defined thread ");
+    }
+}
+
 public class ThreadOp {
     public static void main(String[] args) {
         System.out.println("program started ");
@@ -21,6 +29,13 @@ public class ThreadOp {
         } catch (Exception e) {
 
         }
+
+        System.out.println(t.getId());
+
+        // start user defined thread
+
+        UserThread uthread = new UserThread();
+        uthread.start();
 
         System.out.println("program ended .......");
     }
